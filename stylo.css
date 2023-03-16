@@ -55,7 +55,7 @@
     font-family: 'PT Serif', serif;
   }
 
-  @media (min-width: 350px) {
+  @media screen and (min-width: 350px)  {
     .btn-1 {
       width: 80px;
       height: 80px;
