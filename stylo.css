@@ -1,0 +1,50 @@
+#jugadas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .texto{
+    text-align: center;
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: transparent;
+  }
+  .btn-1{
+    background-image: url(img/piedra.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+  }
+  .btn-2{
+    background-image: url(img/papel.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+  }
+  .btn-3{
+    background-image: url(img/tijera.png);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+  }
+  
+  #resultado {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #imagenPC {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #resultado2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+  }
