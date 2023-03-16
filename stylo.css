@@ -54,3 +54,18 @@
     margin-top: 20px;
     font-family: 'PT Serif', serif;
   }
+
+  @media (min-width: 350px) {
+    .btn-1 {
+      width: 80px;
+      height: 80px;
+    }
+    .btn-2 {
+      width: 80px;
+      height: 80px;
+    }
+    .btn-3 {
+      width: 80px;
+      height: 80px;
+    }
+  }
