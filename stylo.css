@@ -1,3 +1,7 @@
+/* Fuentes Google */
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
 #jugadas {
     display: flex;
     justify-content: center;
@@ -36,6 +40,7 @@
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Sono', sans-serif;
   }
 
   #imagenPC {
@@ -47,4 +52,5 @@
     font-size: 24px;
     text-align: center;
     margin-top: 20px;
+    font-family: 'PT Serif', serif;
   }

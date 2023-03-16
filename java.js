@@ -5,11 +5,12 @@ console.log("Conectado");
   var indice = Math.floor(Math.random() * jugadas.length);
   return jugadas[indice];
 } */
-
+// Declaramos Variables para las imagenes
 const imgPiedra = "./img/piedra.png";
 const imgPapel = "./img/papel.png";
 const imgTijera = "./img/tijera.png";
 
+//clearmos o renderizamos las Imagenes
 const crearImg = (img) => {
   //traes el body a javascript
   const body = document.getElementById("imagenPC");
@@ -27,9 +28,9 @@ const crearImg = (img) => {
 };
 const jugadas = () => {
   let jugadas = [
-    { name: "piedra", img: imgPiedra },
-    { name: "papel", img: imgPapel },
-    { name: "tijera", img: imgTijera },
+    { name: "Piedra", img: imgPiedra },
+    { name: "Papel", img: imgPapel },
+    { name: "Tijeras", img: imgTijera },
   ];
   let indice = Math.floor(Math.random() * jugadas.length);
   crearImg(jugadas[indice].img)
@@ -40,16 +41,16 @@ const jugadas = () => {
 // Función que compara las jugadas y devuelve el resultado
 function jugar(jugadaUsuario, jugadaComputadora) {
   if (jugadaUsuario === jugadaComputadora) {
-    return "Empate";
+    return "Empate 🤡😳";
   } else if (
-    (jugadaUsuario === "piedra" && jugadaComputadora === "tijeras") ||
-    (jugadaUsuario === "papel" && jugadaComputadora === "piedra") ||
-    (jugadaUsuario === "tijeras" && jugadaComputadora === "papel")
+    (jugadaUsuario === "Piedra" && jugadaComputadora === "Tijeras") ||
+    (jugadaUsuario === "Papel" && jugadaComputadora === "Piedra") ||
+    (jugadaUsuario === "Tijeras" && jugadaComputadora === "Papel")
   ) {
 
-    return "Ganaste!" ;
+    return "😁 Ganaste! 😁" ;
   } else {
-    return "Perdiste :(";
+    return "Perdiste 😭😭";
   }
 }
 
@@ -60,11 +61,11 @@ function jugarJugada(e) {
   var resultado = jugar(jugadaUsuario, jugadaComputadora);
   document.getElementById("resultado").innerHTML = "Elegiste: " + jugadaUsuario;
   document.getElementById("resultado2").innerHTML = "La Computadora Eligio: " + jugadaComputadora
-  + "<br>" + resultado;
+  + "<br><br>" + resultado;
 
 }
 
 // Eventos para las jugadas
-document.getElementById("piedra").addEventListener("click", jugarJugada);
-document.getElementById("papel").addEventListener("click", jugarJugada);
-document.getElementById("tijeras").addEventListener("click", jugarJugada);
+document.getElementById("Piedra").addEventListener("click", jugarJugada);
+document.getElementById("Papel").addEventListener("click", jugarJugada);
+document.getElementById("Tijeras").addEventListener("click", jugarJugada);
