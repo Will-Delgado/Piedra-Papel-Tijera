@@ -13,8 +13,10 @@ const imgTijera = "./img/tijera.png";
 const crearImg = (img) => {
   //traes el body a javascript
   const body = document.getElementById("imagenPC");
+  body.innerText="";
   //creas la etiqueta img
   const etiquetaImg = document.createElement("img");
+
   // le das los atributos a la etiqueta img
   etiquetaImg.src = img;
   etiquetaImg.alt = "Texto alternativo";
